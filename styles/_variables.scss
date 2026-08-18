@@ -1,0 +1,370 @@
+// @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&display=swap");
+
+$navbarColor: #232b35;
+$ideasColor: #1ad4cd;
+$header_transparetText: #0d141a;
+$white_textColor: #f4f9fb;
+$main_textColor: #0c0d0d;
+$side_headersColor: #aab1b4;
+$navbar_iconFont: "Gugi", serif;
+$text_font: "Noto Kufi Arabic", serif;
+$main_font: "Outfit", serif;
+$header_fontSize: clamp(2.5rem, 8vw, 150px);
+$header_fontweight: 800;
+$progress-text-color: #17b7b2;
+
+@keyframes dropdown-animation {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  93% {
+    z-index: -1;
+  }
+  94% {
+    z-index: 1;
+  }
+  99% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes header-triangles {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes navbar-triangles {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes firefly3n1-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(50px, 150px);
+  }
+  66% {
+    transform: translate(10px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(50px, 100px);
+  }
+  66% {
+    transform: translate(20px, 120px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(10px, 150px);
+  }
+  66% {
+    transform: translate(40px, 250px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(150px, 30px);
+  }
+  66% {
+    transform: translate(100px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(100px, 150px);
+  }
+  66% {
+    transform: translate(150px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(150px, 150px);
+  }
+  66% {
+    transform: translate(10px, 200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-7 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, -150px);
+  }
+  66% {
+    transform: translate(50px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-8 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-50px, -150px);
+  }
+  66% {
+    transform: translate(10px, -200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-9 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-50px, 160px);
+  }
+  66% {
+    transform: translate(-10px, 200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-10 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-200px, 10px);
+  }
+  66% {
+    transform: translate(-100px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-11 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-150px, 10px);
+  }
+  66% {
+    transform: translate(-170px, 40px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-12 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-10px, 150px);
+  }
+  66% {
+    transform: translate(-100px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-13 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-150px, -150px);
+  }
+  66% {
+    transform: translate(10px, -250px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-14 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-30px, -100px);
+  }
+  66% {
+    transform: translate(100px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-16 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(150px, -150px);
+  }
+  66% {
+    transform: translate(200px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-15 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(150px, -150px);
+  }
+  66% {
+    transform: translate(200px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-17 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(10px, -150px);
+  }
+  66% {
+    transform: translate(100px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-18 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-250px, -30px);
+  }
+  66% {
+    transform: translate(-200px, -150px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-19 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-100px, 10px);
+  }
+  66% {
+    transform: translate(-150px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes firefly3n1-20 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(10px, -200px);
+  }
+  66% {
+    transform: translate(110px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .w-md-100b {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    background-color: $navbarColor;
+    padding: 0 1rem 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .triangle-and-link {
+    position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
